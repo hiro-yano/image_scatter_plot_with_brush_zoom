@@ -18,7 +18,7 @@
   .scatter-container {
     margin: auto;
     width: 900px;
-    height: 500px;
+    height: 900px;
   }
 
   .svg-plot,
@@ -62,11 +62,13 @@
     position: absolute;
     margin-left: 71px;
     margin-top: 20px;
+    width: 815px;
+    height: 820px;
   }
 </style>
 <body>
   <div class="scatter-container">
-    <img id="img1" width="815" height="420" />
+    <img id="img1" />
     <div class="tools">
       <button id="reset">Reset</button>
       <button id="brush" class="active">Brush</button>
@@ -88,7 +90,7 @@
 
     const margin = { top: 20, right: 15, bottom: 60, left: 70 };
     const outerWidth = 900;
-    const outerHeight = 500;
+    const outerHeight = 900;
     const width = outerWidth - margin.left - margin.right;
     const height = outerHeight - margin.top - margin.bottom;
 
@@ -395,15 +397,5 @@
         brushSvg.call(brush.move, null);
       }
     }
-    /*
-    var brush_ele = document.querySelector("#brush-svg > rect.overlay");
-    var brush_ele_cr = brush_ele.getBoundingClientRect();
-    var brush_ele_left = brush_ele_cr.left;
-    var brush_ele_top = brush_ele_cr.top;
-
-    var img1_ele = document.getElementById("img1");
-    img1_ele.style.left = brush_ele_left + "px";
-    img1_ele.style.top = brush_ele_top + "px";
-  */
   </script>
 </body>
