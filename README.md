@@ -9,4 +9,4 @@ d3 v4
 
 ## Demo
 
-https://yappynoppy.github.io/image_scatter_plot_with_brush_zoom/
+https://hiro-yano.github.io/image_scatter_plot_with_brush_zoom/
